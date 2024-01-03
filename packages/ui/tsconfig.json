@@ -1,0 +1,28 @@
+{
+  "extends": "@repo/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@repo/ui/*": ["src/*"],
+      "@/": ["src/*"]
+    },
+    "module": "esnext",
+    "resolveJsonModule": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "next.config.js",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/types/**/*.tsx",
+    "tailwind.config.js",
+    "postcss.config.js"
+  ],
+  "exclude": ["node_modules"]
+}
